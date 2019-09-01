@@ -4,7 +4,7 @@ export default (request) => {
   return new Promise(resolve => {
     Queue.enqueue(() => {
       return new Promise((innerResolve, innerInject) => {
-        request().then(res => innerResolve(res)).catch(err => innerInject(err));
+        request().then(res => innerResolve(res));
       });
     }, res => resolve(res));
   });
