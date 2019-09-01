@@ -54,21 +54,21 @@ const req4 = Buffer(request4);
 
 
 const bPromise1 = () => {
-	return new Promise(resolve => {
-		setTimeout(() => {
-			console.log('promise start1');
-			resolve('promise ok1');
-		}, 2000)
-	});
+  return new Promise(resolve => {
+    setTimeout(() => {
+      console.log('promise start1');
+      resolve('promise ok1');
+    }, 2000)
+  });
 } 
 
 const bPromise2 = () => {
-	return new Promise(resolve => {
-		setTimeout(() => {
-			console.log('promise start2');
-			resolve('promise ok2');
-		}, 1000)
-	});
+  return new Promise(resolve => {
+    setTimeout(() => {
+      console.log('promise start2');
+      resolve('promise ok2');
+    }, 1000)
+  });
 }
 
 const pro1 = bPromise1();
