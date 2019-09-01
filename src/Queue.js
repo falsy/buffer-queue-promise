@@ -17,7 +17,7 @@ class Queue {
     return this.queue[0];
   }
   
-  dequeue() {A
+  dequeue() {
     this.queue.shift();
   }
   

@@ -1,6 +1,6 @@
 import Queue from './Queue.js';
 
-export default = (request) => {
+export default (request) => {
   return new Promise(resolve => {
     Queue.enqueue(() => {
       return new Promise((innerResolve, innerInject) => {
