@@ -1,21 +1,5 @@
 import Buffer from './Buffer';
 
-const request1 = () => {
-  return new Promise(resolve => {
-    setTimeout(() => {
-      console.log('request1 start');	
-      resolve('ok');
-    }, 2000);
-  });
-};
-const request2 = () => {
-  return new Promise(resolve => {
-    setTimeout(() => {
-      console.log('request2 start');
-      resolve('ok');
-    }, 1000);
-  });
-};
 const basicRequest1 = () => {
   return new Promise(resolve => {
     setTimeout(() => {
@@ -32,7 +16,22 @@ const basicRequest2 = () => {
     }, 1000);
   });
 };
-
+const request1 = () => {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      console.log('request1 start');	
+      resolve('ok');
+    }, 2000);
+  });
+};
+const request2 = () => {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      console.log('request2 start');
+      resolve('ok');
+    }, 1000);
+  });
+};
 
 const pro1 = basicRequest1();
 const pro2 = basicRequest2();
